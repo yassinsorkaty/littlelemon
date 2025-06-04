@@ -9,14 +9,14 @@ featuring both web pages and REST APIs for menu management and table bookings.
 FEATURES IMPLEMENTED
 ===================
 
-Module 1: Project Setup ✅
+Module 1: Project Setup 
 - Django project created with name 'littlelemon'
 - Django app created with name 'restaurant'
 - Static files configuration for serving images, CSS, and JavaScript
 - Template system configured for rendering HTML pages
 
 
-Module 2: Project Functionality ✅
+Module 2: Project Functionality 
 - MySQL database connection configured
 - Menu model with fields: name, price, menu_item_description
 - Booking model with fields: first_name, reservation_date, reservation_slot
@@ -25,7 +25,7 @@ Module 2: Project Functionality ✅
 - Table booking API with full CRUD operations
 - Model serializers for API data conversion
 
-Module 3: Security and Testing ✅
+Module 3: Security and Testing 
 - User authentication system using Djoser
 - Token-based authentication for API security
 - User registration, login, and logout functionality
