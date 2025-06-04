@@ -14,7 +14,7 @@ Module 1: Project Setup ✅
 - Django app created with name 'restaurant'
 - Static files configuration for serving images, CSS, and JavaScript
 - Template system configured for rendering HTML pages
-- Git repository initialized (local)
+
 
 Module 2: Project Functionality ✅
 - MySQL database connection configured
