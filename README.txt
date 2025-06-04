@@ -300,12 +300,6 @@ pipenv run python run_tests.py
 
 INSTALLATION AND SETUP
 ======================
-
-Prerequisites:
-- Python 3.8+
-- MySQL Server
-- pip and pipenv
-
 Installation Steps:
 1. Clone the repository
 2. Navigate to project directory
@@ -322,105 +316,4 @@ Installation Steps:
 8. Run the server:
    pipenv run python manage.py runserver
 
-DEPENDENCIES
-============
-- Django >= 4.1.1
-- Django REST Framework >= 3.14.0
-- Djoser >= 2.1.0
-- mysqlclient >= 2.1.0
 
-FILE STRUCTURE
-==============
-littlelemon/
-├── manage.py
-├── requirements.txt
-├── Pipfile
-├── run_tests.py
-├── README.txt
-├── INSOMNIA_TESTING_GUIDE.md
-├── .gitignore
-├── littlelemon/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── restaurant/
-│   ├── models.py
-│   ├── views.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── admin.py
-│   ├── forms.py
-│   ├── apps.py
-│   ├── templates/
-│   │   ├── index.html
-│   │   ├── about.html
-│   │   ├── menu.html
-│   │   ├── book.html
-│   │   └── reservations.html
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   └── img/
-│   │       ├── logo.png
-│   │       ├── restaurant_inside.jpg
-│   │       └── restaurant_outside.jpg
-│   └── management/
-│       └── commands/
-│           ├── populate_menu.py
-│           └── populate_bookings.py
-└── tests/
-    ├── __init__.py
-    ├── test_models.py
-    ├── test_views.py
-    ├── test_integration.py
-    └── test_static_templates.py
-
-ADMIN INTERFACE
-===============
-Access the Django admin at http://127.0.0.1:8000/admin/ with superuser credentials to:
-- Manage menu items
-- View and manage bookings
-- Manage users and tokens
-- View API logs
-
-DEVELOPMENT NOTES
-================
-- All API endpoints require authentication
-- Menu items support full CRUD operations
-- Bookings prevent duplicate reservations for same date/slot
-- Static files are served from /restaurant/static/
-- Templates use Django template inheritance
-- Comprehensive test coverage ensures reliability
-
-PRODUCTION CONSIDERATIONS
-========================
-- Set DEBUG = False in production
-- Configure proper MySQL credentials
-- Use environment variables for sensitive settings
-- Set up proper static file serving with a web server
-- Implement rate limiting for API endpoints
-- Add logging and monitoring
-
-CAPSTONE REQUIREMENTS VERIFICATION
-==================================
-1. ✅ Web application uses Django
-2. ✅ Connects to MySQL database
-3. ✅ Has a Menu model
-4. ✅ Has a Booking model  
-5. ✅ Implements Django REST APIs
-6. ✅ Implements authentication
-7. ✅ Contains unit tests
-
-All 7 requirements are successfully implemented and tested.
-
-ERROR HANDLING
-==============
-Common API Error Responses:
-- 401 Unauthorized: Missing or invalid authentication token
-- 400 Bad Request: Invalid data format or missing required fields
-- 404 Not Found: Resource does not exist
-- 405 Method Not Allowed: HTTP method not supported for endpoint
-- 500 Internal Server Error: Server-side error (check logs)
-
-For detailed API testing with screenshots and examples, see INSOMNIA_TESTING_GUIDE.md
